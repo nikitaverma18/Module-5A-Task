@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-image 0.5s ease-in-out;
+    position: relative;
+}
+.dark {
+    background-image: url("DarkBG.jpg");
+    background-size: cover;
+    height: 100vh;
+    flex-wrap: column;
+}
+
+.light {
+    background-image: url("lightMode.jpg");
+    background-size: cover;
+    height: 100vh;
+    flex-wrap: column;
+}
+
+button#mode {
+    padding: 15px 30px;
+    font-size: 25px;
+    color: white;
+    background-color: rgb(4, 4, 12);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease;
+}
+
+button#mode:hover {
+    background-color: rgb(3, 3, 24);
+    transform: scale(1.1);
+}
+
